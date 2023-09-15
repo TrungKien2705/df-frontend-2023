@@ -1,3 +1,7 @@
 /node_modules
+<<<<<<< HEAD
 .DS_Store
 .vscode
+=======
+.DS_Store
+>>>>>>> 4f63042 (first commit assignment-1)

@@ -10,6 +10,7 @@ Welcome to the Frontend Training 2023 repository! This is where you'll find exer
 
 ## Assignments Schedule
 
+<<<<<<< HEAD
 | Day | Topic                                                                     | Deadline   |
 | --- | ------------------------------------------------------------------------- | ---------- |
 | 1   | [HTML, CSS & JavaScript](./assignment-1/)                                 | 21/09/2023 |
@@ -35,6 +36,21 @@ Once enabled, follow these steps for each submission:
 2. **Deployment**: Deploy your project on a cloud service to generate a public preview link.
 3. **Issue Creation**: Open an issue in your forked repository with the title `Submission for assignment [number]`. Ensure you include the public preview link in the issue description. Refer to [this example issue](https://github.com/zlatanpham/df-frontend-2023/issues/1) for guidance.
 
+=======
+| Day | Topic                                                  | Deadline   |
+| --- | ------------------------------------------------------ | ---------- |
+| 1   | [HTML, CSS & JavaScript](./assignment-1/)              | 21/09/2023 |
+| 2   | React & State management                               |            |
+| 3   | Tooling: Webpack, Babel, TypeScript, ESLint & Prettier |            |
+| 4   | NextJS & TailwindCSS                                   |            |
+| 5   | Form handling                                          |            |
+| 6   | Authentication & API Integration                       |            |
+| 7   | Type-safe client server                                |            |
+| 8   | Modern workflow & Deployment                           |            |
+
+Stay tuned for updates on future assignments!
+
+>>>>>>> 4f63042 (first commit assignment-1)
 ## Evaluation Criteria
 
 We evaluate assignments based on the following criteria:
@@ -42,7 +58,11 @@ We evaluate assignments based on the following criteria:
 - **Timeliness**: The assignment must be submitted by the deadline (based on the time of the last commit in the assignment folder).
 - **Requirements Fulfillment**: The assignment must fulfill all mandatory requirements.
 
+<<<<<<< HEAD
 Our team will carefully assess your submissions. After evaluation, we'll share the results and offer feedback on the corresponding open issue.
+=======
+Our team will thoroughly review your submissions. Once evaluated, we will open a GitHub issue on your fork to announce the result and provide feedback on your work.
+>>>>>>> 4f63042 (first commit assignment-1)
 
 ## Support
 

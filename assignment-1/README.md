@@ -1,5 +1,6 @@
 # HTML, CSS & JavaScript
 
+<<<<<<< HEAD
 Design and develop a simple bookstore Content Management System (CMS) table that lets users view and add records. For this task, you'll need to use HTML, CSS, and JavaScript to craft a user-friendly interface for content management.
 
 ![bookstore preview](../assets/bookstore-basic.png).
@@ -29,3 +30,12 @@ Design and develop a simple bookstore Content Management System (CMS) table that
 - Ensure all the assignment code resides in the `/assignment-1` directory.
 - The final submission deadline is **21/09/2023**.
 - After completing and setting up the deployable demo, [open a Github issue](https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue) in your forked repository titled **Submission for assignment 1**. Include the demo link in the description.
+=======
+## functional way
+
+1. **List Book:** List of books corresponding to the topic.
+2. **Search By Book:** Search for books based on book title.
+3. **Add, Edit and Delete Book:**Add, edit and delete books.
+
+<img src="./assets/assignment-1.png" width="1200" alt="assignment-1_TrungKien" />
+>>>>>>> 4f63042 (first commit assignment-1)
