@@ -6,21 +6,37 @@ html {
 =======
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
-* {
-    margin: 0;
-    padding: 0;
+*, ::after, ::before {
     box-sizing: border-box;
 }
-html{
+body{
+    margin: 0;
+    font-size: 1rem;
     font-family: "Poppins", sans-serif;
     color: #141a4e;
     background-color: #f2f6f9;
-    font-size: 1rem;
-}
 
+}
+header{
+    width: 100%;
+}
 .header-container{
     border-bottom: 2px solid #bab9b9;
-    padding: 16px 0;
+}
+@media (min-width: 768px) {
+    .header {
+        width: 750px;
+    }
+}
+@media (min-width: 992px) {
+    .header{
+        width: 970px;
+    }
+}
+@media (min-width: 1200px) {
+    .header {
+        width: 1170px;
+    }
 }
 .header-logo{
     display: flex;
@@ -30,9 +46,9 @@ html{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
-    max-width: 1140px;
-    margin: 0 auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: auto;
 }
 .header-user{
     display: flex;
@@ -58,11 +74,26 @@ html{
     color: #141a4e;
     margin: auto;
 }
-.container{
-    width: 100%;
-    max-width: 1140px;
-    margin: 0 auto;
-    padding: 16px 0;
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
 }
 .section-table{
     margin-top: 20px;
