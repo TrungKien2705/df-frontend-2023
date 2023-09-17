@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-// Your JS code goes here
-=======
 
 const modalAdd = document.querySelector('.modal-add-book');
 const  closeModalAdd = document.querySelector('#close-modal-add');
@@ -204,4 +201,3 @@ searchInput.addEventListener('change', (e) => {
 
 
 
->>>>>>> 4f63042 (first commit assignment-1)

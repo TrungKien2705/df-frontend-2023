@@ -14,8 +14,9 @@
   {
     "id": 4,
     "title" : "FontEnd"
-  },{
-  "id": 5,
-  "title" : "BackEnd"
-}
+  },
+  {
+    "id": 5,
+    "title" : "BackEnd"
+  }
 ]

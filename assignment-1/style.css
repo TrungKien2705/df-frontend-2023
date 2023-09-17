@@ -145,52 +145,52 @@ header{
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
     appearance: none
 }
- .form-input:focus, .form-input-select:focus {
-     color: #212529;
-     background-color: #fff;
-     border-color: #d3445b;
-     outline: 0;
-     box-shadow: 0 0 0 0.1rem #de7c8b;
- }
- .form-btn{
-     color: #fff;
-     background-color: #d3445b;
-     display: inline-block;
-     font-weight: 400;
-     line-height: 1.5;
-     text-align: center;
-     text-decoration: none;
-     vertical-align: middle;
-     cursor: pointer;
-     user-select: none;
-     border: 1px solid #d3445b;
-     padding: 0.375rem 0.75rem;
-     font-size: 1rem;
-     border-radius: 0.25rem;
-     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
- }
- .form-btn:hover{
-     background-color: #bb2d3b;
-     border-color: #b02a37;
- }
- .table-book{
-     width: 100%;
-     color: #212529;
-     vertical-align: top;
-     border-color: #dee2e6;
-     border-collapse: collapse;
- }
- .edit-book{
-     margin-right: 15px;
-     color: #ffc107;
-     cursor: pointer;
-     text-decoration: underline;
- }
- .delete-book{
-     color: #dc3545;
-     cursor: pointer;
-     text-decoration: underline;
- }
+.form-input:focus, .form-input-select:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #d3445b;
+    outline: 0;
+    box-shadow: 0 0 0 0.1rem #de7c8b;
+}
+.form-btn{
+    color: #fff;
+    background-color: #d3445b;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    border: 1px solid #d3445b;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.form-btn:hover{
+    background-color: #bb2d3b;
+    border-color: #b02a37;
+}
+.table-book{
+    width: 100%;
+    color: #212529;
+    vertical-align: top;
+    border-color: #dee2e6;
+    border-collapse: collapse;
+}
+.edit-book{
+    margin-right: 15px;
+    color: #ffc107;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.delete-book{
+    color: #dc3545;
+    cursor: pointer;
+    text-decoration: underline;
+}
 th, td {
     border: 2px solid #dee2e6;
     padding: 7px;
@@ -198,6 +198,8 @@ th, td {
 td{
     text-align: center;
 }
+
+
 .footer{
     position: fixed;
     left: 0;
@@ -285,8 +287,11 @@ form .submit-btn {
     border: none;
     background: none;
 }
-
-
+.no-data{
+    margin: 20px auto;
+    gap: 10px;
+    display: inline-grid;
+}
 .hidden {
     display: none;
 }

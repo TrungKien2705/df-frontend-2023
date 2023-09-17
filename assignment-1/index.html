@@ -1,109 +1,200 @@
 <!DOCTYPE html>
 <html lang="vi">
-<head>
+  <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-
-    <title>Bookstore</title>
+    <link rel="icon" type="image/x-icon" href="/assets/user.jpg" />
+    <meta
+      property="og:title"
+      content="Book Store - Frontend Training 2023 - Trung Kien"
+    />
+    <meta
+      property="og:description"
+      content="Chào mừng bạn đến với Book Store, điểm đến lý tưởng dành cho những người yêu sách! Chương trình Frontend Training 2023 hân hạnh giới thiệu đến bạn một trải nghiệm mua sắm sách trực tuyến độc đáo và tận hưởng sự kết hợp hoàn hảo giữa công nghệ và văn hóa sách."
+    />
+    <meta
+      property="og:image"
+      content="https://df-frontend-2023-assignment-1.vercel.app/assets/assignment-1.png"
+    />
+    <title>Book Store</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
-</head>
-    <body>
+  </head>
+  <body>
     <header class="header-container">
       <nav class="header">
-          <div class="header-logo">
-                <a href="https://dwarves.foundation/" target="_blank">
-                    <svg width="39" height="41" viewBox="0 0 39 41" class="flex-none inline-block mr-4">
-                        <title>logo</title>
-                        <g fill-rule="nonzero" fill="none">
-                            <path d="M5.208 40.726c-2.804 0-5.074-2.279-5.074-5.093V5.093C.134 2.278 2.404 0 5.208 0l12.703.015c11.292 0 20.433 9.262 20.285 20.623-.149 11.183-9.438 20.088-20.582 20.088H5.208z" fill="#E13F5E"></path>
-                            <path d="M7.76 31.821h-.652a.634.634 0 0 1-.638-.64v-5.108c0-.357.282-.64.638-.64h5.09c.356 0 .638.283.638.64v.655c0 2.815-2.27 5.093-5.075 5.093zM7.108 16.528H22.97c2.804 0 5.075-2.278 5.075-5.092v-.61a.666.666 0 0 0-.668-.67H11.56c-2.805 0-5.075 2.278-5.075 5.092v.64c0 .358.282.64.623.64zM7.108 24.167h8.25c2.805 0 5.075-2.278 5.075-5.092v-.64a.634.634 0 0 0-.638-.64H7.108a.634.634 0 0 0-.638.64v5.092c.015.357.297.64.638.64z" fill="#FFF"></path>
-                        </g>
-                    </svg>
-                </a>
-              <h1 class="header-title">Book Store</h1>
-          </div>
-          <a href="https://github.com/TrungKien2705" target="_blank" class=header-user>
-              <img class="user-image" src="assets/user.jpg" alt="User" aria-label="User" srcset="">
-              <span class="user-name">Trung Kien</span>
+        <div class="header-logo">
+          <a
+            style="margin: auto"
+            href="https://dwarves.foundation/"
+            target="_blank"
+          >
+            <svg
+              width="39"
+              height="41"
+              viewBox="0 0 39 41"
+              class="flex-none inline-block mr-4"
+            >
+              <title>logo</title>
+              <g fill-rule="nonzero" fill="none">
+                <path
+                  d="M5.208 40.726c-2.804 0-5.074-2.279-5.074-5.093V5.093C.134 2.278 2.404 0 5.208 0l12.703.015c11.292 0 20.433 9.262 20.285 20.623-.149 11.183-9.438 20.088-20.582 20.088H5.208z"
+                  fill="#E13F5E"
+                ></path>
+                <path
+                  d="M7.76 31.821h-.652a.634.634 0 0 1-.638-.64v-5.108c0-.357.282-.64.638-.64h5.09c.356 0 .638.283.638.64v.655c0 2.815-2.27 5.093-5.075 5.093zM7.108 16.528H22.97c2.804 0 5.075-2.278 5.075-5.092v-.61a.666.666 0 0 0-.668-.67H11.56c-2.805 0-5.075 2.278-5.075 5.092v.64c0 .358.282.64.623.64zM7.108 24.167h8.25c2.805 0 5.075-2.278 5.075-5.092v-.64a.634.634 0 0 0-.638-.64H7.108a.634.634 0 0 0-.638.64v5.092c.015.357.297.64.638.64z"
+                  fill="#FFF"
+                ></path>
+              </g>
+            </svg>
           </a>
+          <h1 class="header-title">Book Store</h1>
+        </div>
+        <a
+          href="https://github.com/TrungKien2705"
+          target="_blank"
+          class="header-user"
+        >
+          <img
+            class="user-image"
+            src="assets/user.jpg"
+            alt="User"
+            aria-label="User"
+            srcset=""
+          />
+          <span class="user-name">Trung Kien</span>
+        </a>
       </nav>
     </header>
     <main class="container">
-        <section class="section-table">
-           <div class="table-search-add">
-               <div>
-                   <input
-                           id="search-input"
-                           name="search-book"
-                           class="form-input"
-                           type="search"
-                           placeholder="Search Book"/>
-               </div>
-               <button type="button" class="form-btn" id="btn-add-book" onclick="onClickModalAdd()">Add Book</button>
-           </div>
-            <div >
-                <table id="table-book" class="table-book table-bordered">
-                   <thead>
-                       <tr>
-                           <th>#</th>
-                           <th>Name</th>
-                           <th>Author</th>
-                           <th>Topic</th>
-                           <th>Action</th>
-                       </tr>
-                   </thead>
-                   <tbody>
-                       <tr>
-
-                       </tr>
-                   </tbody>
-                </table>
-
+      <section class="section-table">
+        <div class="table-search-add">
+          <div>
+            <input
+              id="search-input"
+              name="search-book"
+              class="form-input"
+              type="search"
+              placeholder="Search Book"
+            />
+          </div>
+          <button
+            type="button"
+            class="form-btn"
+            id="btn-add-book"
+            onclick="onClickModalAdd()"
+          >
+            Add Book
+          </button>
+        </div>
+        <div style="overflow: auto">
+          <table id="table-book" class="table-book table-bordered">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Author</th>
+                <th>Topic</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section>
+        <div class="modal modal-add-book hidden">
+          <button class="close-modal" id="close-modal-add">&times;</button>
+          <h2 id="title-modal">Add Book 📚</h2>
+          <form action="" onsubmit="return false">
+            <div class="form-group">
+              <label class="form-label">Name Book</label>
+              <input
+                class="form-input"
+                type="text"
+                id="name"
+                placeholder="Enter Name"
+              />
             </div>
-
-        </section>
-        <section>
-            <div class="modal modal-add-book hidden" >
-                <button class="close-modal" id="close-modal-add">&times;</button>
-                <h2 id="title-modal">Add Book 📚</h2>
-                <form action="" onsubmit="return false" >
-                    <div class="form-group">
-                        <label class="form-label">Name Book</label>
-                        <input  class="form-input" type="text" id="name" placeholder="Enter Name" />
-                    </div>
-                    <div class="form-group">
-                        <label class="form-label">Author</label>
-                        <input  class="form-input" type="text" id="author" placeholder="Enter Author" />
-                    </div>
-                    <div class="form-group">
-                        <label for="select-topic" class="form-label">Topic</label>
-                        <select id="select-topic" class="form-input-select" style="background-image: url('/assets/chevron-down.svg')" >
-                            <option class="option-text" selected disabled value="null">Select Topic</option>
-                        </select>
-                    </div>
-                    <button onclick="onSubmitForm()"  class="submit-btn" type="button" id="submit-btn">Add book</button>
-                </form>
+            <div class="form-group">
+              <label class="form-label">Author</label>
+              <input
+                class="form-input"
+                type="text"
+                id="author"
+                placeholder="Enter Author"
+              />
             </div>
-            <div class="overlay overlay-add hidden"></div>
-        </section>
-        <section >
-            <div class="modal modal-confirm-delete hidden">
-                <button class="close-modal" id="close-modal-delete">&times;</button>
-                <h2>Delete Book 🗑️</h2>
-                <p class="modal-text">Do you want to delete <b id="delete-name">Kien</b> book ?</p>
-                <div class="modal-btn">
-                    <button onclick="onClickDelete()" style="background-color: transparent !important; color: #212529; border: none" type="button" class="form-btn">Delete</button>
-                    <button type="button" class="form-btn" id="btn-cancel">Cancel</button>
-                </div>
+            <div class="form-group">
+              <label for="select-topic" class="form-label">Topic</label>
+              <select
+                id="select-topic"
+                class="form-input-select"
+                style="background-image: url('/assets/chevron-down.svg')"
+              >
+                <option class="option-text" selected disabled value="null">
+                  Select Topic
+                </option>
+              </select>
             </div>
-            <div class="overlay overlay-delete hidden"></div>
-        </section>
-
+            <button
+              onclick="onSubmitForm()"
+              class="submit-btn"
+              type="button"
+              id="submit-btn"
+            >
+              Add book
+            </button>
+          </form>
+        </div>
+        <div class="overlay overlay-add hidden"></div>
+      </section>
+      <section>
+        <div class="modal modal-confirm-delete hidden">
+          <button class="close-modal" id="close-modal-delete">&times;</button>
+          <h2>Delete Book 🗑️</h2>
+          <p class="modal-text">
+            Do you want to delete <b id="delete-name">Kien</b> book ?
+          </p>
+          <div class="modal-btn">
+            <button
+              onclick="onClickDelete()"
+              style="
+                background-color: transparent !important;
+                color: #212529;
+                border: none;
+              "
+              type="button"
+              class="form-btn"
+            >
+              Delete
+            </button>
+            <button type="button" class="form-btn" id="btn-cancel">
+              Cancel
+            </button>
+          </div>
+        </div>
+        <div class="overlay overlay-delete hidden"></div>
+      </section>
     </main>
     <footer class="footer">
-        Copyright © 2023 | <a href="https://github.com/TrungKien2705" target="_blank">Nguyen Trung Kien</a>
+      Copyright © 2023 |
+      <a
+        rel="noopener noreferrer"
+        href="https://github.com/TrungKien2705"
+        target="_blank"
+        >Nguyen Trung Kien</a
+      >
+      |
+      <a
+        href="https://github.com/TrungKien2705/df-frontend-2023-assignment-1"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Source code</a
+      >
     </footer>
 
     <script src="script.js"></script>
-    </body>
+  </body>
 </html>
