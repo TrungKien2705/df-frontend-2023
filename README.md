@@ -10,7 +10,6 @@ Welcome to the Frontend Training 2023 repository! This is where you'll find exer
 
 ## Assignments Schedule
 
-<<<<<<< HEAD
 | Day | Topic                                                                     | Deadline   |
 | --- | ------------------------------------------------------------------------- | ---------- |
 | 1   | [HTML, CSS & JavaScript](./assignment-1/)                                 | 21/09/2023 |
@@ -50,7 +49,6 @@ Once enabled, follow these steps for each submission:
 
 Stay tuned for updates on future assignments!
 
->>>>>>> 4f63042 (first commit assignment-1)
 ## Evaluation Criteria
 
 We evaluate assignments based on the following criteria:
@@ -58,11 +56,8 @@ We evaluate assignments based on the following criteria:
 - **Timeliness**: The assignment must be submitted by the deadline (based on the time of the last commit in the assignment folder).
 - **Requirements Fulfillment**: The assignment must fulfill all mandatory requirements.
 
-<<<<<<< HEAD
 Our team will carefully assess your submissions. After evaluation, we'll share the results and offer feedback on the corresponding open issue.
-=======
 Our team will thoroughly review your submissions. Once evaluated, we will open a GitHub issue on your fork to announce the result and provide feedback on your work.
->>>>>>> 4f63042 (first commit assignment-1)
 
 ## Support
 
