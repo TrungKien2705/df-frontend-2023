@@ -1,0 +1,128 @@
+/* Common CSS - Áp dụng cho cả light và dark theme */
+.show-modal {
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 1.2rem 2.5rem;
+    margin: 5rem 2rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 500px;
+    padding: 4rem;
+    border-radius: 5px;
+    box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+    z-index: 100;
+}
+
+.modal h2 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+.modal-text {
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+.modal-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+
+form .submit-btn {
+    display: block;
+    width: 100%;
+    margin: 1.3rem 0;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding: 1rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.overlay {
+    overflow-x: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+    z-index: 5;
+}
+.css-t3ipsp-control{
+    border-color: #d3445b !important;
+    box-shadow: 0 0 0 0.1rem #de7c8b !important;
+}
+.css-t3ipsp-control:hover{
+    color: #212529;
+    background-color: #fff ;
+    border-color: #d3445b !important;
+    outline: 0;
+    box-shadow: 0 0 0 0.1rem #de7c8b !important;
+}
+.css-tr4s17-option{
+    background-color: #d3445b !important;
+}
+.required{
+    color: #b02a37;
+}
+.form-group{
+    margin-bottom: 20px;
+}
+.close-modal {
+    position: absolute;
+    top: 0.8rem;
+    right: 1.3rem;
+    font-size: 2.5rem;
+    cursor: pointer;
+    border: none;
+    background: none;
+    color: var(--modal-text-color);
+}
+
+.hidden {
+    display: none;
+}
+
+/* Light Theme */
+body[data-theme="light"] {
+    --modal-bg: #fff;
+    --modal-text-color: #333;
+    --modal-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+    --modal-button-bg: #d3445b;
+    --modal-button-color: #fff;
+}
+
+/* Dark Theme */
+body[data-theme="dark"] {
+    --modal-bg: #121212;
+    --modal-text-color: #fff;
+    --modal-shadow: 0 3rem 5rem rgba(255, 255, 255, 0.3);
+    --modal-button-bg: #d3445b;
+    --modal-button-color: #fff;
+}
+
+.modal {
+    background-color: var(--modal-bg);
+    color: var(--modal-text-color);
+    box-shadow: var(--modal-shadow);
+}
+
+form .submit-btn {
+    background-color: var(--modal-button-bg);
+    color: var(--modal-button-color);
+}

@@ -1,6 +1,7 @@
 import React from 'react';
-import ImageUser from '../image/user.jpg';
-import '../styles/header.css';
+import ImageUser from '../../image/user.jpg';
+import '../../styles/Header.css';
+import ToggleButton from "../ToggleButton";
 const Header = () => {
     return (
         <header className="header-container">
@@ -32,19 +33,22 @@ const Header = () => {
                     </a>
                     <h1 className="header-title">Book Store</h1>
                 </div>
-                <a
-                    href="https://github.com/TrungKien2705"
-                    target="_blank"
-                    className="header-user"
-                >
-                    <img
-                        className="user-image"
-                        src={ImageUser}
-                        alt="User"
-                        aria-label="User"
-                    />
-                    <span className="user-name">Trung Kien</span>
-                </a>
+                <div className="theme-header">
+                    <ToggleButton/>
+                    <a
+                        href="https://github.com/TrungKien2705"
+                        target="_blank"
+                        className="header-user"
+                    >
+                        <img
+                            className="user-image"
+                            src={ImageUser}
+                            alt="User"
+                            aria-label="User"
+                        />
+                        <span className="user-name">Trung Kien</span>
+                    </a>
+                </div>
             </nav>
         </header>
     );

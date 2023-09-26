@@ -1,8 +1,8 @@
 import {createBrowserRouter} from "react-router-dom";
 import {path} from "./path";
-import DefaultLayout from "./components/DefaultLayout";
+import DefaultLayout from "./components/layout/DefaultLayout";
 import NotFound from "./views/NotFound";
-import TableBook from "./views/TableBook";
+import Book from "./views/Book";
 
 const route = createBrowserRouter([
     {
@@ -11,7 +11,7 @@ const route = createBrowserRouter([
         children: [
             {
                 path: path.HOME,
-                element: <TableBook/>
+                element: <Book/>
             },
             {
                 path: path.NOTFOUND,

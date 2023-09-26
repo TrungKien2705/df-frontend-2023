@@ -1,0 +1,10 @@
+.no-data-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.no-data{
+    text-align: center;
+    margin: 15px auto;
+}

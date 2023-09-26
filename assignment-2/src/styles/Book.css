@@ -1,0 +1,25 @@
+.m-top{
+    margin:  20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.form-search{
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    box-shadow: none;
+    transition: all 0.3s;
+}
+.form-search.focused {
+    color: #212529;
+    background-color: #fff;
+    border-color: #d3445b;
+    outline: 0;
+    box-shadow: 0 0 0 0.1rem #de7c8b;
+}
+.icon-search{
+    padding: 5px;
+}

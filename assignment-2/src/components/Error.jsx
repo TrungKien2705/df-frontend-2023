@@ -1,11 +1,11 @@
 import React from 'react';
 
-const TableBook = () => {
+const Error = () => {
     return (
         <div>
-            table Book
+           Error
         </div>
     );
 };
 
-export default TableBook;
+export default Error;
