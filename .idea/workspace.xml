@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="28bfe9d8-f5f5-4530-8f5e-0f2ff57fff60" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/assignment-2/src/axios.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment-2/src/components/Button.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment-2/src/components/Error.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment-2/src/components/Loading.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment-2/src/components/Nodata.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment-2/src/components/Pagination.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment-2/src/components/Table.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment-2/src/components/ToggleButton.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment-2/src/components/modal/ModalDelete.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment-2/src/components/modal/ModalForm.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment-2/src/hook/useFetchData.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment-2/src/hook/useTheme.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment-2/src/image/empty.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment-2/src/styles/Book.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment-2/src/styles/Button.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment-2/src/styles/Input.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment-2/src/styles/Loading.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment-2/src/styles/Modal.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment-2/src/styles/Nodata.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment-2/src/styles/Table.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment-2/src/styles/ToggleButton.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment-1/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment-1/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment-1/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assignment-1/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment-2/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/assignment-2/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment-2/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/assignment-2/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment-2/public/data/book.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment-2/public/data/topic.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment-2/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/assignment-2/public/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment-2/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment-2/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment-2/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assignment-2/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment-2/src/components/DefaultLayout.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assignment-2/src/components/layout/DefaultLayout.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment-2/src/components/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assignment-2/src/components/layout/Footer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment-2/src/components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assignment-2/src/components/layout/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment-2/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/assignment-2/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment-2/src/route.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assignment-2/src/route.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment-2/src/styles/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/assignment-2/src/styles/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment-2/src/styles/footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/assignment-2/src/styles/Footer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment-2/src/styles/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/assignment-2/src/styles/Header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment-2/src/styles/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/assignment-2/src/styles/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment-2/src/views/TableBook.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assignment-2/src/views/Book.jsx" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;TrungKien2705&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="fe16f46f-2ce1-4865-bf2f-1a172b1bc175" />
+        <option name="url" value="https://github.com/TrungKien2705/df-frontend-2023.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2Vefo36oltYKiWGykFzFxeQ4Beo" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Traning-Frontend-2023/df-frontend-2023/assignment-2/src/image&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\WebStorm 2023.2\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Traning-Frontend-2023\df-frontend-2023\assignment-2\src\image" />
+      <recent name="D:\Traning-Frontend-2023\df-frontend-2023\assignment-2" />
+      <recent name="D:\Traning-Frontend-2023\df-frontend-2023\assignment-2\public" />
+      <recent name="D:\Traning-Frontend-2023\df-frontend-2023\assignment-2\src\data" />
+      <recent name="D:\Traning-Frontend-2023\df-frontend-2023\assignment-2\src\assets" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Traning-Frontend-2023\df-frontend-2023\assignment-2\src\components\layout" />
+      <recent name="D:\Traning-Frontend-2023\df-frontend-2023\assignment-2\src" />
+      <recent name="D:\Traning-Frontend-2023\df-frontend-2023\assignment-2\src\styles" />
+      <recent name="D:\Traning-Frontend-2023\df-frontend-2023\assignment-2\src\views" />
+      <recent name="D:\Traning-Frontend-2023\df-frontend-2023\assignment-2\public" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/assignment-2/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.start" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="28bfe9d8-f5f5-4530-8f5e-0f2ff57fff60" name="Changes" comment="" />
+      <created>1695201644099</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1695201644099</updated>
+      <workItem from="1695201661313" duration="24000" />
+      <workItem from="1695305727191" duration="5667000" />
+      <workItem from="1695351928589" duration="515000" />
+      <workItem from="1695352485317" duration="1308000" />
+      <workItem from="1695366087753" duration="8500000" />
+      <workItem from="1695460966615" duration="4544000" />
+      <workItem from="1695516091714" duration="3570000" />
+      <workItem from="1695543015508" duration="11764000" />
+      <workItem from="1695628861052" duration="4247000" />
+      <workItem from="1695652262684" duration="10096000" />
+      <workItem from="1695691512748" duration="12290000" />
+      <workItem from="1695721478935" duration="3548000" />
+      <workItem from="1695732748519" duration="1206000" />
+      <workItem from="1695738956337" duration="7413000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
