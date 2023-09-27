@@ -14,11 +14,11 @@ const ModalDelete = (props) => {
             setLoading(true);
             const res = await axios.delete(`/api/books/${item.id}`);
             if (res){
-                setLoading(false)
-                toast.success("Delete book success!");
                 const res = await axios.get('api/books');
                 setDataBooks(res);
                 setShow(false);
+                toast.success("Delete book success!");
+                setLoading(false);
             } else {
                 setLoading(false)
                 toast.error("An error occurred while deleting the book.");
@@ -33,16 +33,24 @@ const ModalDelete = (props) => {
                 </button>
                 <h2>Delete Book 🗑️</h2>
                 <p className="modal-text">
-                    Do you want to delete <strong>{item.name}</strong> book ?
+                    Do you want to delete <strong className="delete-name">{item.name}</strong> book ?
                 </p>
                 <div className="modal-btn">
-                    <Button
-                        disabled={loading}
-                        onClick={onClickDelete}
-                        type={'button'} secondary={true}
-                        fullWidth={false}
-                        lable={ loading ? <Loading width={'w-30'}/> :'Delete'} />
-                    <Button disabled={loading} onClick={() => {setShow(false)}} type={'button'} secondary={false} fullWidth={false} lable={'Canel'} />
+                    {
+                        loading ?
+                            <Button lable={<Loading width={'w-30'}/>}  disabled={loading} type={'button'} secondary={false} fullWidth={true}/>
+                        :
+                        <>
+                            <Button
+                                disabled={loading}
+                                onClick={onClickDelete}
+                                type={'button'} secondary={true}
+                                fullWidth={false}
+                                lable={'Delete'} />
+                            <Button onClick={() => {setShow(false)}} type={'button'} secondary={false} fullWidth={false} lable={'Canel'} />
+                        </>
+                    }
+
                 </div>
             </div>
             <div onClick={() => setShow(false)} className={ show ? "overlay overlay-delete" : "overlay overlay-delete hidden"}></div>

@@ -76,6 +76,7 @@ const ModalForm = (props) => {
        }
 
     }
+
     return (
         <section>
             <div className={show ? "modal modal-add-book" : "modal modal-add-book hidden"}>
@@ -121,6 +122,7 @@ const ModalForm = (props) => {
                             render={({ field }) => (
                            <>
                                <Select
+                                   classNamePrefix="react-select"
                                    name="topic_id"
                                    id={'select-topic'}
                                     isDisabled={loadingForm}

@@ -105,7 +105,6 @@ body[data-theme="light"] {
     --modal-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
     --modal-button-bg: #d3445b;
     --modal-button-color: #fff;
-    --color-name: #121212;
 }
 
 /* Dark Theme */
@@ -115,10 +114,6 @@ body[data-theme="dark"] {
     --modal-shadow: 0 3rem 5rem rgba(255, 255, 255, 0.3);
     --modal-button-bg: #d3445b;
     --modal-button-color: #fff;
-    --color-name: #d3445b;
-}
-.delete-name{
-    color: var(--color-name);
 }
 
 .modal {
@@ -130,35 +125,4 @@ body[data-theme="dark"] {
 form .submit-btn {
     background-color: var(--modal-button-bg);
     color: var(--modal-button-color);
-}
-/* CSS cho .react-select-container */
-.react-select__control {
-    background-color: var(--bg-color) !important;
-    border-color: var(--border-color) !important;
-    transition: none !important;
-}
-
-.react-select__menu {
-    background-color: var(--bg-color) !important;
-    border: 1px solid var(--border-color) !important;
-}
-
-/*.react-select__option {*/
-/*    background-color:  var(--bg-color) !important;*/
-/*}*/
-.css-tr4s17-option{
-    background-color: #d3445b !important;
-}
-
-.react-select__option:hover {
-    background-color: var(--bg-color) !important;
-}
-
-.react-select__indicator-separator {
-    background-color: var(--border-color) !important;
-}
-
-.react-select__placeholder,
-.react-select__single-value {
-    color: var(--text-color) !important;
 }

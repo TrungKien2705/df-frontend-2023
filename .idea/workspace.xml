@@ -4,47 +4,37 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="28bfe9d8-f5f5-4530-8f5e-0f2ff57fff60" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/assignment-2/src/axios.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment-2/src/components/Button.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment-2/src/components/Error.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment-2/src/components/Loading.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment-2/src/components/Nodata.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment-2/src/components/Pagination.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment-2/src/components/Table.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment-2/src/components/ToggleButton.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment-2/src/components/modal/ModalDelete.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment-2/src/components/modal/ModalForm.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment-2/src/hook/useFetchData.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment-2/src/hook/useTheme.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment-2/src/image/empty.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment-2/src/styles/Book.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment-2/src/styles/Button.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment-2/src/styles/Input.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment-2/src/styles/Loading.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment-2/src/styles/Modal.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment-2/src/styles/Nodata.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment-2/src/styles/Table.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment-2/src/styles/ToggleButton.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment-1/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment-1/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment-1/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assignment-1/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment-2/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/assignment-2/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment-2/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/assignment-2/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment-2/public/data/book.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment-2/public/data/topic.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment-2/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/assignment-2/public/favicon.ico" afterDir="false" />
+    <list default="true" id="28bfe9d8-f5f5-4530-8f5e-0f2ff57fff60" name="Changes" comment="git assignment-2">
+      <change afterPath="$PROJECT_DIR$/assignment-3/public/assets/assignment-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment-3/src/styles/App.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment-3/src/styles/Book.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment-3/src/styles/Button.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment-3/src/styles/Footer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment-3/src/styles/Header.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment-3/src/styles/Input.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment-3/src/styles/Loading.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment-3/src/styles/Modal.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment-3/src/styles/Nodata.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment-3/src/styles/Table.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment-3/src/styles/ToggleButton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment-3/src/styles/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assignment-2/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment-2/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment-2/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assignment-2/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment-2/src/components/DefaultLayout.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assignment-2/src/components/layout/DefaultLayout.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment-2/src/components/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assignment-2/src/components/layout/Footer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment-2/src/components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assignment-2/src/components/layout/Header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment-2/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/assignment-2/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment-2/src/route.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assignment-2/src/route.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment-2/src/styles/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/assignment-2/src/styles/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment-2/src/styles/footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/assignment-2/src/styles/Footer.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment-2/src/styles/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/assignment-2/src/styles/Header.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment-2/src/styles/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/assignment-2/src/styles/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment-2/src/views/TableBook.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assignment-2/src/views/Book.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment-2/src/components/modal/ModalDelete.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assignment-2/src/components/modal/ModalDelete.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment-2/src/components/modal/ModalForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assignment-2/src/components/modal/ModalForm.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment-2/src/styles/Book.css" beforeDir="false" afterPath="$PROJECT_DIR$/assignment-2/src/styles/Book.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment-2/src/styles/Header.css" beforeDir="false" afterPath="$PROJECT_DIR$/assignment-2/src/styles/Header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment-2/src/styles/Input.css" beforeDir="false" afterPath="$PROJECT_DIR$/assignment-2/src/styles/Input.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment-2/src/styles/Modal.css" beforeDir="false" afterPath="$PROJECT_DIR$/assignment-2/src/styles/Modal.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment-3/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/assignment-3/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment-3/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/assignment-3/pnpm-lock.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment-3/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/assignment-3/public/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment-3/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment-3/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment-3/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/assignment-3/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment-3/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/assignment-3/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment-3/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/assignment-3/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment-3/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/assignment-3/src/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +50,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/assignment-2" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -91,30 +81,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Traning-Frontend-2023/df-frontend-2023/assignment-2/src/image&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;D:\\WebStorm 2023.2\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "D:/Traning-Frontend-2023/df-frontend-2023/assignment-3/src/styles",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "prettier.import.notification.dismissed": "true",
+    "ts.external.directory.path": "D:\\Traning-Frontend-2023\\df-frontend-2023\\assignment-3\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Traning-Frontend-2023\df-frontend-2023\assignment-3\src\styles" />
+      <recent name="D:\Traning-Frontend-2023\df-frontend-2023\assignment-3\public" />
+      <recent name="D:\Traning-Frontend-2023\df-frontend-2023\assignment-3\public\assets" />
       <recent name="D:\Traning-Frontend-2023\df-frontend-2023\assignment-2\src\image" />
       <recent name="D:\Traning-Frontend-2023\df-frontend-2023\assignment-2" />
-      <recent name="D:\Traning-Frontend-2023\df-frontend-2023\assignment-2\public" />
-      <recent name="D:\Traning-Frontend-2023\df-frontend-2023\assignment-2\src\data" />
-      <recent name="D:\Traning-Frontend-2023\df-frontend-2023\assignment-2\src\assets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Traning-Frontend-2023\df-frontend-2023\assignment-2\src\components\layout" />
@@ -124,7 +115,17 @@
       <recent name="D:\Traning-Frontend-2023\df-frontend-2023\assignment-2\public" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="npm.start">
+    <configuration name="start (1)" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/assignment-3/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/assignment-2/package.json" />
       <command value="run" />
@@ -138,6 +139,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="npm.start" />
+        <item itemvalue="npm.start (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -162,8 +164,18 @@
       <workItem from="1695691512748" duration="12290000" />
       <workItem from="1695721478935" duration="3548000" />
       <workItem from="1695732748519" duration="1206000" />
-      <workItem from="1695738956337" duration="7413000" />
+      <workItem from="1695738956337" duration="7831000" />
+      <workItem from="1695790362360" duration="8601000" />
     </task>
+    <task id="LOCAL-00001" summary="git assignment-2">
+      <option name="closed" value="true" />
+      <created>1695746789135</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1695746789135</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -179,5 +191,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="git assignment-2" />
+    <option name="LAST_COMMIT_MESSAGE" value="git assignment-2" />
   </component>
 </project>

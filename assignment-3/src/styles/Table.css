@@ -1,0 +1,105 @@
+
+/* Light Theme */
+body[data-theme="light"] {
+    --text-color: #212529;
+    --border-color: #dee2e6;
+    --link-color: #ffc107;
+    --delete-color: #dc3545;
+    --background-color: #fff;
+    --pagination-bg: #d3445b;
+    --pagination-color: #fff;
+}
+
+/* Dark Theme */
+body[data-theme="dark"] {
+    --text-color: #fff;
+    --border-color: #282c34;
+    --link-color: #ffc107;
+    --delete-color: #dc3545;
+    --background-color: #121212;
+    --pagination-bg: #d3445b;
+    --pagination-color: #fff;
+}
+
+.table{
+    margin-bottom: 30px;
+    overflow: auto;
+}
+.table-book{
+    width: 100%;
+    color: var(--text-color);
+    vertical-align: top;
+    border-color: #dee2e6;
+    border-collapse: collapse;
+}
+.edit-book{
+    margin-right: 15px;
+    color: var(--link-color);
+    cursor: pointer;
+    text-decoration: underline;
+}
+.delete-book{
+    color: var(--delete-color);
+    cursor: pointer;
+    text-decoration: underline;
+}
+th, td {
+    border: 2px solid #dee2e6;
+    padding: 7px;
+}
+td{
+    text-align: center;
+}
+.btn-edit{
+    color: var(--link-color);
+    text-decoration: underline;
+}
+.btn-delete{
+    color: var(--delete-color);
+    text-decoration: underline;
+}
+.pagination {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    padding-top: 5px;
+    margin-top: 12px;
+}
+.pagination > a,
+.pagination > span {
+    color: #383838;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    margin: 0 2px 5px;
+    min-width: 20px;
+    padding: 0 10px;
+    height: 40px;
+    text-decoration: none;
+    position: relative;
+    border-radius: 5px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+.pagination > span {
+    pointer-events: none;
+}
+.pagination svg {
+    height: 24px;
+    width: 24px;
+}
+.pagination > a.page-active {
+    background: var( --pagination-bg);
+    color: var(--pagination-color);
+}
+.pagination > a:hover {
+    background: var( --pagination-bg);
+    color: var(--pagination-color);
+}
+.disabled {
+    pointer-events: none;
+    cursor: pointer;
+    opacity: 0;
+}
