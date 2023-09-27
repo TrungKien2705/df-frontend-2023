@@ -21,6 +21,7 @@ const Book = () => {
     const [isInputFocused, setInputFocused] = useState(false);
     const [isAdd, setIsAdd] = useState(true);
     const [item, setItem] = useState({});
+    const [valueSearch, setValueSearch] = useState('')
     const {
         control,
     } = useForm();
@@ -30,7 +31,6 @@ const Book = () => {
             setLoading(true)
             const res = await axios.get('/api/books');
             if (res) {
-                // const data = res.reverse();
                 setDataBooks(res);
                 setLoading(false)
             } else {
@@ -50,11 +50,11 @@ const Book = () => {
     const debouncedSearch = debounce((searchTerm) => {
         const filtered = dataBooks.filter(book => book.name.toLowerCase().includes(searchTerm.trim().toLowerCase()));
         console.log(searchTerm)
-        setDataBooks(filtered);
-        console.log(dataFilter)
+        setDatFilter(searchTerm.length > 0 ? filtered : dataBooks);
    }, 300);
     const onChangeSearch = (e) =>{
         debouncedSearch(e);
+        setValueSearch(e)
     }
     const onClickAddBook = () =>{
         setIsAdd(true)
@@ -97,7 +97,7 @@ const Book = () => {
             </div>
             <Table
                 setDataBooks={setDataBooks}
-                dataBooks={dataBooks}
+                dataBooks={valueSearch ? dataFilter :dataBooks}
                 loading={loading}
                 error={error}
                 setItem={setItem}

@@ -1,4 +1,3 @@
-/* Common CSS - Áp dụng cho cả light và dark theme */
 .show-modal {
     font-size: 2rem;
     font-weight: 600;
@@ -98,7 +97,6 @@ form .submit-btn {
     display: none;
 }
 
-/* Light Theme */
 body[data-theme="light"] {
     --modal-bg: #fff;
     --modal-text-color: #333;
@@ -131,7 +129,6 @@ form .submit-btn {
     background-color: var(--modal-button-bg);
     color: var(--modal-button-color);
 }
-/* CSS cho .react-select-container */
 .react-select__control {
     background-color: var(--bg-color) !important;
     border-color: var(--border-color) !important;
@@ -143,15 +140,8 @@ form .submit-btn {
     border: 1px solid var(--border-color) !important;
 }
 
-/*.react-select__option {*/
-/*    background-color:  var(--bg-color) !important;*/
-/*}*/
 .css-tr4s17-option{
     background-color: #d3445b !important;
-}
-
-.react-select__option:hover {
-    background-color: var(--bg-color) !important;
 }
 
 .react-select__indicator-separator {

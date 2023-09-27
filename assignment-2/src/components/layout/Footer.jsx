@@ -13,7 +13,7 @@ const Footer = () => (
         |
         <a
             className="link-footer"
-            href="https://github.com/TrungKien2705/df-frontend-2023-assignment-1"
+            href="https://github.com/TrungKien2705/df-frontend-2023-assignment-2"
             target="_blank"
             rel="noopener noreferrer"
         >Source code</a

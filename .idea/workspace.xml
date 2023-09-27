@@ -5,36 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="28bfe9d8-f5f5-4530-8f5e-0f2ff57fff60" name="Changes" comment="git assignment-2">
-      <change afterPath="$PROJECT_DIR$/assignment-3/public/assets/assignment-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment-3/src/styles/App.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment-3/src/styles/Book.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment-3/src/styles/Button.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment-3/src/styles/Footer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment-3/src/styles/Header.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment-3/src/styles/Input.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment-3/src/styles/Loading.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment-3/src/styles/Modal.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment-3/src/styles/Nodata.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment-3/src/styles/Table.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment-3/src/styles/ToggleButton.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment-3/src/styles/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment-2/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment-2/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment-2/src/components/modal/ModalDelete.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assignment-2/src/components/modal/ModalDelete.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment-2/src/components/modal/ModalForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assignment-2/src/components/modal/ModalForm.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment-2/src/styles/Book.css" beforeDir="false" afterPath="$PROJECT_DIR$/assignment-2/src/styles/Book.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment-2/src/styles/Header.css" beforeDir="false" afterPath="$PROJECT_DIR$/assignment-2/src/styles/Header.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment-2/src/styles/Input.css" beforeDir="false" afterPath="$PROJECT_DIR$/assignment-2/src/styles/Input.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment-2/src/components/layout/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assignment-2/src/components/layout/Footer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assignment-2/src/styles/Modal.css" beforeDir="false" afterPath="$PROJECT_DIR$/assignment-2/src/styles/Modal.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment-3/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/assignment-3/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment-3/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/assignment-3/pnpm-lock.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment-3/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/assignment-3/public/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment-3/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment-3/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment-3/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/assignment-3/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment-3/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/assignment-3/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment-3/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/assignment-3/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment-3/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/assignment-3/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment-2/src/views/Book.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assignment-2/src/views/Book.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,7 +139,7 @@
       <workItem from="1695721478935" duration="3548000" />
       <workItem from="1695732748519" duration="1206000" />
       <workItem from="1695738956337" duration="7831000" />
-      <workItem from="1695790362360" duration="8601000" />
+      <workItem from="1695790362360" duration="10288000" />
     </task>
     <task id="LOCAL-00001" summary="git assignment-2">
       <option name="closed" value="true" />
