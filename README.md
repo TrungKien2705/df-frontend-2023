@@ -35,17 +35,6 @@ Once enabled, follow these steps for each submission:
 2. **Deployment**: Deploy your project on a cloud service to generate a public preview link.
 3. **Issue Creation**: Open an issue in your forked repository with the title `Submission for assignment [number]`. Ensure you include the public preview link in the issue description. Refer to [this example issue](https://github.com/zlatanpham/df-frontend-2023/issues/1) for guidance.
 
-=======
-| Day | Topic                                                  | Deadline   |
-| --- | ------------------------------------------------------ | ---------- |
-| 1   | [HTML, CSS & JavaScript](./assignment-1/)              | 21/09/2023 |
-| 2   | React & State management                               |            |
-| 3   | Tooling: Webpack, Babel, TypeScript, ESLint & Prettier |            |
-| 4   | NextJS & TailwindCSS                                   |            |
-| 5   | Form handling                                          |            |
-| 6   | Authentication & API Integration                       |            |
-| 7   | Type-safe client server                                |            |
-| 8   | Modern workflow & Deployment                           |            |
 
 Stay tuned for updates on future assignments!
 
