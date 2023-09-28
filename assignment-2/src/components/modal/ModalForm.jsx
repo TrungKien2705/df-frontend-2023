@@ -10,6 +10,11 @@ import {AiOutlineClose} from "react-icons/ai";
 const ModalForm = (props) => {
     const {show, setShow, data, loadingTopic, isAdd, item, setDataBooks} = props;
     const [loadingForm, setLoadingForm] = useState(false);
+    const defaultValues = {
+        name: "",
+        author: "",
+        topic_id: 0,
+    };
     const {
         register,
         handleSubmit,
@@ -17,7 +22,8 @@ const ModalForm = (props) => {
         control,
         reset,
         setValue
-    } = useForm();
+    } = useForm({defaultValues});
+
     useEffect(() => {
         console.log(isAdd, item)
         if (!isAdd) {

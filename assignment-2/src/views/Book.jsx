@@ -80,7 +80,7 @@ const Book = () => {
                                placeholder={'Search Books'}
                                type="search"
                                onFocus={handleInputFocus}
-                               onBlur={handleInputBlur}
+                                   onBlur={handleInputBlur}
                                 />
                             )}
                         />

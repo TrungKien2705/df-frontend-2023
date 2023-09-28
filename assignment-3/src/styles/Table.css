@@ -63,12 +63,14 @@ td{
     justify-content: end;
     align-items: center;
     flex-wrap: wrap;
+    gap: 5px;
     border-radius: 5px;
     padding-top: 5px;
     margin-top: 12px;
 }
-.pagination > a,
-.pagination > span {
+.pagination > button{
+    border: none;
+    outline: 0;
     color: #383838;
     display: flex;
     justify-content: center;
@@ -90,11 +92,11 @@ td{
     height: 24px;
     width: 24px;
 }
-.pagination > a.page-active {
+.pagination > button.page-active {
     background: var( --pagination-bg);
     color: var(--pagination-color);
 }
-.pagination > a:hover {
+.pagination > button:hover {
     background: var( --pagination-bg);
     color: var(--pagination-color);
 }
