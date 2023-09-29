@@ -3,7 +3,6 @@ import {Controller, useForm} from 'react-hook-form';
 import React, {ReactNode, useEffect, useState} from "react";
 import {AiOutlineClose} from "react-icons/ai";
 import Select from "react-select";
-import {toast} from "react-toastify";
 import {Topic, TopicSelect} from "../../types/topic";
 import Button from "../Button";
 import Input from "../Input";
@@ -18,7 +17,7 @@ interface ModalFormProps {
     loadingTopic: boolean,
     isAdd: boolean,
     item: Book,
-    setDataBooks: any,
+    setDataBooks: React.Dispatch<React.SetStateAction<Book[]>>,
 }
 const ModalForm: React.FC<ModalFormProps> = (props) => {
     const {show, setShow, data, isAdd, loadingTopic, setDataBooks, item} = props;
@@ -62,7 +61,7 @@ const ModalForm: React.FC<ModalFormProps> = (props) => {
                 value: item.id,
                 label: item.name
             }));
-            console.log("topicList", topicList)
+            // console.log("topicList", topicList)
             setDataTopicSelect(topicList);
         }
         setDataSelect();
@@ -75,30 +74,26 @@ const ModalForm: React.FC<ModalFormProps> = (props) => {
         }
         setLoadingForm(true);
         if (isAdd){
-            const response = await postCreateBook(dataBook)
+            const response = await postCreateBook(dataBook);
             if (response){
                 reset();
                 setLoadingForm(false);
-                toast.success("Create book success!");
-                const res = await getAllBooks()
+                const res = await getAllBooks();
                 setDataBooks(res);
                 setShow(false);
             } else {
                 setLoadingForm(false);
-                toast.error("An error occurred while creating the book.");
             }
         } else {
             const response = await putUpdateBook(dataBook, item.id)
                if (response){
                    reset();
                    setLoadingForm(false);
-                   toast.success("Update book success!");
                    const res = await getAllBooks()
                    setDataBooks(res);
                    setShow(false);
                } else {
                     setLoadingForm(false);
-                    toast.error("An error occurred while updating the book.");
                }
         }
 
@@ -157,7 +152,6 @@ const ModalForm: React.FC<ModalFormProps> = (props) => {
                         <Controller
                             name="topic_id"
                             control={control}
-                            // defaultValue={null}
                             rules={{ required: true }}
                             render={({ field }) => (
                                 <Select

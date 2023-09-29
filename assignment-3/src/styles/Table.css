@@ -101,7 +101,5 @@ td{
     color: var(--pagination-color);
 }
 .disabled {
-    pointer-events: none;
-    cursor: pointer;
-    opacity: 0;
+    display: none !important;
 }

@@ -1,5 +1,4 @@
 
-/* Light Theme */
 body[data-theme="light"] {
     --text-color: #212529;
     --border-color: #dee2e6;
@@ -10,7 +9,6 @@ body[data-theme="light"] {
     --pagination-color: #fff;
 }
 
-/* Dark Theme */
 body[data-theme="dark"] {
     --text-color: #fff;
     --border-color: #282c34;
@@ -63,12 +61,14 @@ td{
     justify-content: end;
     align-items: center;
     flex-wrap: wrap;
+    gap: 5px;
     border-radius: 5px;
     padding-top: 5px;
     margin-top: 12px;
 }
-.pagination > a,
-.pagination > span {
+.pagination > button{
+    border: none;
+    outline: 0;
     color: #383838;
     display: flex;
     justify-content: center;
@@ -90,16 +90,14 @@ td{
     height: 24px;
     width: 24px;
 }
-.pagination > a.page-active {
+.pagination > button.page-active {
     background: var( --pagination-bg);
     color: var(--pagination-color);
 }
-.pagination > a:hover {
+.pagination > button:hover {
     background: var( --pagination-bg);
     color: var(--pagination-color);
 }
 .disabled {
-    pointer-events: none;
-    cursor: pointer;
-    opacity: 0;
+    display: none !important;
 }

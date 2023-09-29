@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { AiOutlineSearch } from 'react-icons/ai';
 import { useForm, Controller } from 'react-hook-form';
 import "../styles/Book.css";
+import debounce from 'lodash/debounce';
 import {Book, initialBook} from "../types/books";
 import Button from '../components/Button';
 import {getAllBooks} from "../services/bookServices";
@@ -12,36 +13,35 @@ import {Topic} from "../types/topic";
 import ModalForm from "../components/modal/ModalForm";
 import ModalDelete from "../components/modal/ModalDelete";
 
+
 const Books = () => {
     const [showModalForm, setShowModalForm] = useState(false);
     const [showModalDelete, setShowModalDelete] = useState(false);
-    const [dataBooks, setDataBooks] = useState<Book[] | []>([]);
-    // const [dataFilter, setDataFilter] = useState([]);
+    const [dataBooks, setDataBooks] = useState<Book[] | any>([]);
+    const [dataFilter, setDataFilter] = useState<Book[]>([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(false);
-    const [dataTopic, setDataTopic] = useState<Topic[] | []>([])
+    const [dataTopic, setDataTopic] = useState<Topic[] | any>([]);
     const [isInputFocused, setInputFocused] = useState(false);
     const [isAdd, setIsAdd] = useState(true);
     const [item, setItem] = useState<Book>(initialBook);
-    // const [valueSearch, setValueSearch] = useState('');
+    const [valueSearch, setValueSearch] = useState('');
 
     const {
         control,
     } = useForm();
 
     useEffect(() => {
-        const fetchData = async () => {
+        const fetchData =  async () => {
             if (!loading) {
                 return;
             }
             try {
                 setLoading(true);
                 const resBook = await getAllBooks();
-                const resTopic = await getAllTopic();
+                const resTopic = await  getAllTopic();
                 if (resBook && resTopic) {
-                    // @ts-ignore
                     setDataTopic(resTopic);
-                    // @ts-ignore
                     setDataBooks(resBook);
                     setLoading(false);
                 } else {
@@ -65,16 +65,15 @@ const Books = () => {
         setInputFocused(false);
     };
 
-    // const debouncedSearch = debounce((searchTerm: string) => {
-    //     const filtered = dataBooks.filter(book => book.name.toLowerCase().includes(searchTerm.trim().toLowerCase()));
-    //     console.log(searchTerm);
-    //     setDataFilter(searchTerm.length > 0 ? filtered : dataBooks);
-    // }, 300);
-    //
-    const onChangeSearch = () => {
-        // debouncedSearch(e);
-        // setValueSearch(e);
-        // console.log(e.target.value)
+    const debouncedSearch = debounce((searchTerm: string) => {
+        const filtered: Book[] = dataBooks.filter(book => book.name.toLowerCase().includes(searchTerm.trim().toLowerCase()));
+        setDataFilter(searchTerm.length > 0 ? filtered : dataBooks);
+    }, 300);
+
+
+    const onChangeSearch = (e) => {
+        debouncedSearch(e.target.value);
+        setValueSearch(e.target.value);
     };
 
     const onClickAddBook = () => {
@@ -116,7 +115,7 @@ const Books = () => {
             </div>
             <Table
                 setDataBooks={setDataBooks}
-                dataBooks={dataBooks.length > 0 ? dataBooks : []}
+                dataBooks={valueSearch ? dataFilter : dataBooks}
                 loading={loading}
                 error={error}
                 setItem={setItem}

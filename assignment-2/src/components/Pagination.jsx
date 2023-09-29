@@ -1,48 +1,85 @@
+import React, { useEffect } from "react";
+import { HiDotsHorizontal } from "react-icons/hi";
+import { FiChevronLeft, FiChevronRight, FiChevronsLeft, FiChevronsRight } from "react-icons/fi";
 
 const Pagination = (props) => {
-    const {data, itemsPerPage, currentPage, setCurrentPage} = props;
+    const { data, itemsPerPage, currentPage, setCurrentPage } = props;
     const totalPages = Math.ceil(data.length / itemsPerPage);
+
+    useEffect(() => {
+        if (currentPage > 1 && (currentPage - 1) * itemsPerPage >= data.length) {
+            setCurrentPage(currentPage - 1);
+        }
+    }, [data, itemsPerPage, currentPage, setCurrentPage]);
+
     const handleClick = (page) => {
         setCurrentPage(page);
     };
 
     const renderPagination = () => {
         const pages = [];
-        for (let i = 1; i <= totalPages; i++) {
+        const displayPageCount = 3;
+        const pageStart = Math.max(1, currentPage - Math.floor(displayPageCount / 2));
+        const pageEnd = Math.min(totalPages, pageStart + displayPageCount - 1);
+
+        for (let i = pageStart; i <= pageEnd; i++) {
             pages.push(i);
         }
-        if (totalPages > 1 ){
-            return pages.map((page) => (
-                <a
-                    key={page}
-                    className={currentPage === page ? 'page-active' : ''}
-                    onClick={() => handleClick(page)}
-                >
-                    {page}
-                </a>
-            ));
-        }  else {
-            return <></>
+
+        const pagination = pages.map((page) => (
+            <button
+                key={page}
+                className={currentPage === page ? 'page-active' : ''}
+                onClick={() => handleClick(page)}
+            >
+                {page}
+            </button>
+        ));
+
+        if (totalPages > 1) {
+            if (pageStart > 1) {
+                pagination.unshift(<span key="start-ellipsis"><HiDotsHorizontal/></span>);
+            }
+
+            if (pageEnd < totalPages) {
+                pagination.push(<span key="end-ellipsis"><HiDotsHorizontal/></span>);
+            }
         }
 
-    }
-
+        return pagination;
+    };
 
     return (
         <div className="pagination">
-            <a title="previous page"
-               onClick={() => handleClick(currentPage - 1)}
-               className={currentPage === 1 ? "disabled" :""}
+            <button
+                title="first page"
+                onClick={() => handleClick(1)}
+                className={currentPage === 1 ? "disabled" : ""}
             >
-                <svg fill="currentColor"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
-            </a>
+                <FiChevronsLeft/>
+            </button>
+            <button
+                title="previous page"
+                onClick={() => handleClick(currentPage - 1)}
+                className={currentPage === 1 ? "disabled" : ""}
+            >
+                <FiChevronLeft/>
+            </button>
             {renderPagination()}
-            <a title="next page"
-               onClick={() => handleClick(currentPage + 1)}
-               className={currentPage === totalPages ? "disabled" : ""}
+            <button
+                title="next page"
+                onClick={() => handleClick(currentPage + 1)}
+                className={currentPage === totalPages ? "disabled" : ""}
             >
-                <svg fill="currentColor"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
-            </a>
+                <FiChevronRight/>
+            </button>
+            <button
+                title="last page"
+                onClick={() => handleClick(totalPages)}
+                className={currentPage === totalPages ? "disabled" : ""}
+            >
+                <FiChevronsRight/>
+            </button>
         </div>
     );
 };

@@ -14,8 +14,8 @@
     transition: all 0.3s;
 }
 .form-search.focused {
-    color: #212529;
-    background-color: #fff;
+    color: var(--text-color);
+    background-color: var(--background-color);
     border-color: #d3445b;
     outline: 0;
     box-shadow: 0 0 0 0.1rem #de7c8b;

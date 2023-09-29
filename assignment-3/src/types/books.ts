@@ -10,6 +10,14 @@ export interface postData{
     author: string,
     topic_id: number
 }
+export interface BookSelect{
+    name: string,
+    author: string,
+    topic_id: {
+        value: number,
+        label: string
+    }
+}
 export const initialBook: Book = {
     id: 0,
     name: '',

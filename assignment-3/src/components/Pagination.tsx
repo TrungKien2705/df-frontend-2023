@@ -1,47 +1,92 @@
-import React from "react";
+import React, {useEffect} from "react";
+import {HiDotsHorizontal} from "react-icons/hi";
+import {FiChevronLeft, FiChevronRight, FiChevronsLeft, FiChevronsRight} from "react-icons/fi";
+import { Book } from "../types/books";
 
-const Pagination = (props) => {
-    const {data, itemsPerPage, currentPage, setCurrentPage} = props;
+interface PaginationProps {
+    data: Book[];
+    itemsPerPage: number;
+    currentPage: number;
+    setCurrentPage: React.Dispatch<React.SetStateAction<number>>;
+}
+
+const Pagination: React.FC<PaginationProps> = (props) => {
+    const { data, itemsPerPage, currentPage, setCurrentPage } = props;
     const totalPages = Math.ceil(data.length / itemsPerPage);
+
+    useEffect(() => {
+        if (currentPage > 1 && (currentPage - 1) * itemsPerPage >= data.length) {
+            setCurrentPage(currentPage - 1);
+        }
+    }, [data, itemsPerPage, currentPage, setCurrentPage]);
+
     const handleClick = (page: number) => {
         setCurrentPage(page);
     };
 
     const renderPagination = () => {
-        const pages = [];
-        for (let i = 1; i <= totalPages; i++) {
-            // @ts-ignore
+        const pages: number[] = [];
+        const displayPageCount = 3;
+        const pageStart: number = Math.max(1, currentPage - Math.floor(displayPageCount / 2));
+        const pageEnd: number = Math.min(totalPages, pageStart + displayPageCount - 1);
+
+        for (let i: number = pageStart; i <= pageEnd; i++) {
             pages.push(i);
         }
-        if (totalPages > 1 ){
-            return pages.map((page) => (
-                <button
-                    key={page}
-                    className={currentPage === page ? 'page-active' : ''}
-                    onClick={() => handleClick(page)}
-                >
-                    {page}
-                </button>
-            ));
-        }  
-        return <div/>
-    }
 
+        const pagination = pages.map((page) => (
+            <button
+                key={page}
+                className={currentPage === page ? 'page-active' : ''}
+                onClick={() => handleClick(page)}
+            >
+                {page}
+            </button>
+        ));
+
+        if (totalPages > 1) {
+            if (pageStart > 1) {
+                pagination.unshift(<span key="start-ellipsis"><HiDotsHorizontal/></span>);
+            }
+
+            if (pageEnd < totalPages) {
+                pagination.push(<span key="end-ellipsis"><HiDotsHorizontal/></span>);
+            }
+        }
+
+        return pagination;
+    };
 
     return (
         <div className="pagination">
-            <button title="previous page"
-               onClick={() => handleClick(currentPage - 1)}
-               className={currentPage === 1 ? "disabled" :""}
+            <button
+                title="first page"
+                onClick={() => handleClick(1)}
+                className={currentPage === 1 ? "disabled" : ""}
             >
-                <svg fill="currentColor"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+                <FiChevronsLeft/>
+            </button>
+            <button
+                title="previous page"
+                onClick={() => handleClick(currentPage - 1)}
+                className={currentPage === 1 ? "disabled" : ""}
+            >
+                <FiChevronLeft/>
             </button>
             {renderPagination()}
-            <button title="next page"
-               onClick={() => handleClick(currentPage + 1)}
-               className={currentPage === totalPages ? "disabled" : ""}
+            <button
+                title="next page"
+                onClick={() => handleClick(currentPage + 1)}
+                className={currentPage === totalPages ? "disabled" : ""}
             >
-                <svg fill="currentColor"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+               <FiChevronRight/>
+            </button>
+            <button
+                title="last page"
+                onClick={() => handleClick(totalPages)}
+                className={currentPage === totalPages ? "disabled" : ""}
+            >
+                <FiChevronsRight/>
             </button>
         </div>
     );

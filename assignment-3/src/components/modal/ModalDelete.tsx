@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 import '../../styles/Modal.css';
-import {toast} from "react-toastify";
 import {AiOutlineClose} from "react-icons/ai";
 import Button from "../Button";
 import Loading from "../Loading";
@@ -11,7 +10,7 @@ interface ModalDeleteProps{
     show: boolean,
     setShow: (b: boolean) => void,
     item: Book,
-    setDataBooks: any
+    setDataBooks: React.Dispatch<React.SetStateAction<Book[]>>;
 }
 const ModalDelete: React.FC<ModalDeleteProps> = (props) => {
     const {show, setShow, item, setDataBooks} = props;
@@ -25,11 +24,9 @@ const ModalDelete: React.FC<ModalDeleteProps> = (props) => {
                 const res = await getAllBooks();
                 setDataBooks(res);
                 setShow(false);
-                toast.success("Delete book success!");
                 setLoading(false);
             } else {
                 setLoading(false)
-                toast.error("An error occurred while deleting the book.");
             }
         }
     }

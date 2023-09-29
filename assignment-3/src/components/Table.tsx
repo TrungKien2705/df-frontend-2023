@@ -12,12 +12,12 @@ interface TableProps{
     setShow: (b: boolean) => void,
     dataTopic: Topic[],
     setIsAdd: (b: boolean) => void,
-    setItem?: any,
+    setItem:  React.Dispatch<React.SetStateAction<Book>>,
     setShowDelete: (b: boolean) => void,
     dataBooks: Book[],
     loading: boolean,
     error: boolean,
-    setDataBooks: any
+    setDataBooks: React.Dispatch<React.SetStateAction<Book[]>>
 }
 const Table:React.FC<TableProps> = (props) => {
     const {  setItem,  dataBooks, dataTopic,loading, error, setDataBooks,setShow, setIsAdd ,setShowDelete } = props;
@@ -104,7 +104,6 @@ const Table:React.FC<TableProps> = (props) => {
             <Pagination
                 data={dataBooks}
                 itemsPerPage={itemsPerPage}
-                setDataBooks={setDataBooks}
                 currentPage={currentPage}
                 setCurrentPage={setCurrentPage}/>
         </>
