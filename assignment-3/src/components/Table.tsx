@@ -17,10 +17,9 @@ interface TableProps{
     dataBooks: Book[],
     loading: boolean,
     error: boolean,
-    setDataBooks: React.Dispatch<React.SetStateAction<Book[]>>
 }
 const Table:React.FC<TableProps> = (props) => {
-    const {  setItem,  dataBooks, dataTopic,loading, error, setDataBooks,setShow, setIsAdd ,setShowDelete } = props;
+    const {  setItem,  dataBooks, dataTopic,loading, error,setShow, setIsAdd ,setShowDelete } = props;
     const [pageData, setPagedData] = useState<Book[] | []>([]);
     const [topicId, setTopicId] = useState({});
     const itemsPerPage = 5;

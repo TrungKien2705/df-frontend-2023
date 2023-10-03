@@ -12,7 +12,7 @@ const Pagination = (props) => {
         }
     }, [data, itemsPerPage, currentPage, setCurrentPage]);
 
-    const handleClick = (page) => {
+    const handlePageChange = (page) => {
         setCurrentPage(page);
     };
 
@@ -30,7 +30,7 @@ const Pagination = (props) => {
             <button
                 key={page}
                 className={currentPage === page ? 'page-active' : ''}
-                onClick={() => handleClick(page)}
+                onClick={() => handlePageChange(page)}
             >
                 {page}
             </button>
@@ -45,6 +45,9 @@ const Pagination = (props) => {
                 pagination.push(<span key="end-ellipsis"><HiDotsHorizontal/></span>);
             }
         }
+        if (totalPages === 1){
+            return null;
+        }
 
         return pagination;
     };
@@ -53,14 +56,14 @@ const Pagination = (props) => {
         <div className="pagination">
             <button
                 title="first page"
-                onClick={() => handleClick(1)}
+                onClick={() => handlePageChange(1)}
                 className={currentPage === 1 ? "disabled" : ""}
             >
                 <FiChevronsLeft/>
             </button>
             <button
                 title="previous page"
-                onClick={() => handleClick(currentPage - 1)}
+                onClick={() => handlePageChange(currentPage - 1)}
                 className={currentPage === 1 ? "disabled" : ""}
             >
                 <FiChevronLeft/>
@@ -68,14 +71,14 @@ const Pagination = (props) => {
             {renderPagination()}
             <button
                 title="next page"
-                onClick={() => handleClick(currentPage + 1)}
+                onClick={() => handlePageChange(currentPage + 1)}
                 className={currentPage === totalPages ? "disabled" : ""}
             >
                 <FiChevronRight/>
             </button>
             <button
                 title="last page"
-                onClick={() => handleClick(totalPages)}
+                onClick={() => handlePageChange(totalPages)}
                 className={currentPage === totalPages ? "disabled" : ""}
             >
                 <FiChevronsRight/>

@@ -56,6 +56,14 @@ const Books = () => {
 
         fetchData();
     }, [loading]);
+    const debouncedSearch = debounce((searchTerm: string) => {
+        const filtered: Book[] = dataBooks.filter(book => book.name.toLowerCase().includes(searchTerm.trim().toLowerCase()));
+        setDataFilter(filtered);
+    }, 300);
+
+    useEffect(() => {
+        debouncedSearch(valueSearch);
+    }, [debouncedSearch, valueSearch]);
 
     const handleInputFocus = () => {
         setInputFocused(true);
@@ -65,10 +73,7 @@ const Books = () => {
         setInputFocused(false);
     };
 
-    const debouncedSearch = debounce((searchTerm: string) => {
-        const filtered: Book[] = dataBooks.filter(book => book.name.toLowerCase().includes(searchTerm.trim().toLowerCase()));
-        setDataFilter(searchTerm.length > 0 ? filtered : dataBooks);
-    }, 300);
+
 
 
     const onChangeSearch = (e) => {
@@ -114,8 +119,7 @@ const Books = () => {
                 />
             </div>
             <Table
-                setDataBooks={setDataBooks}
-                dataBooks={valueSearch ? dataFilter : dataBooks}
+                dataBooks={dataFilter}
                 loading={loading}
                 error={error}
                 setItem={setItem}

@@ -6,9 +6,10 @@ import Theme from "../types/theme";
 
 const ToggleButton = () => {
     const { theme, toggleTheme } = useTheme();
+    const setChecked = theme === Theme.DARK;
     return (
         <>
-            <input onChange={toggleTheme} type="checkbox" className="checkbox" id="checkbox" name="checkbox" />
+            <input checked={setChecked} onChange={toggleTheme} type="checkbox" className="checkbox" id="checkbox" name="checkbox" />
             <label htmlFor="checkbox" className="checkbox-label">
                 <input type="checkbox" className="checkbox" id="checkbox" name="checkbox" />
                 <MdModeNight color={` ${theme === Theme.LIGHT ? "#fff" : "#000" }`}/>
