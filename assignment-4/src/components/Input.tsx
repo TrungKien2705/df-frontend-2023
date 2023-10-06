@@ -1,64 +1,92 @@
-import React, { ChangeEvent, forwardRef } from 'react'
+import React, { ChangeEvent, forwardRef, Ref } from 'react'
+import { Topic } from '../types/topic'
 
 interface InputProps {
   name: string
-  type: 'text' | 'search'
+  dataSelect?: Topic[]
+  type: 'text' | 'search' | 'select'
   label?: string
-  value: string
-  onChange: (e: ChangeEvent<HTMLInputElement>) => void
+  onChange: (e: ChangeEvent<HTMLInputElement | HTMLSelectElement>) => void
   placeholder?: string
   disabled?: boolean
   errors?: NonNullable<unknown>
-  onFocus?: () => void
-  onBlur?: () => void
+  value: string
 }
 
-// eslint-disable-next-line react/display-name
-const Input = forwardRef<HTMLInputElement, InputProps>(
+const Input: React.FC<InputProps> = forwardRef(
   (
     {
       name,
       type,
       label,
-      value,
       onChange,
+      dataSelect,
       placeholder,
       disabled,
+      value,
       errors,
-      onFocus,
-      onBlur,
-    },
-    ref,
+    }: InputProps,
+    ref: Ref<HTMLInputElement | HTMLSelectElement>,
   ) => {
     return (
-      <div className="w-72">
-        <div className="relative h-10 w-full min-w-[200px]">
-          <input
-            id={name}
-            name={name}
-            type={type}
-            value={value}
-            onChange={onChange}
-            placeholder={placeholder}
-            disabled={disabled}
-            onFocus={onFocus}
-            onBlur={onBlur}
-            ref={ref}
-            className="peer h-full w-full rounded-[7px] border border-blue-gray-200 border-t-transparent bg-transparent px-3 py-2.5 font-sans text-sm font-normal text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200 placeholder-shown:border-t-blue-gray-200 focus:border-2 focus:border-pink-500 focus:border-t-transparent focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50"
-          />
+      <>
+        {type === 'select' ? (
+          <div className="">
+            <label
+              htmlFor={name}
+              className="block text-sm font-medium text-gray-900 dark:text-white"
+            >
+              <select
+                id={name}
+                name={name}
+                onChange={onChange}
+                disabled={disabled}
+                value={value}
+                className="mb-4 relative block overflow-hidden rounded-md border border-gray-200 px-3 py-3 w-full outline-0 sm:text-sm dark:border-gray-700 dark:bg-gray-800 dark:text-white focus-within:ring-1 focus-within:border-blue-600  focus-within:ring-blue-600"
+                ref={ref as Ref<HTMLSelectElement>}
+              >
+                <option value="">Select topic</option>
+                {dataSelect &&
+                  dataSelect.map((item, index) => {
+                    return (
+                      <option
+                        key={index}
+                        value={item.name}
+                      >
+                        {item.name}
+                      </option>
+                    )
+                  })}
+              </select>
+            </label>
+          </div>
+        ) : (
           <label
             htmlFor={name}
-            className="before:content[' '] after:content[' '] pointer-events-none absolute left-0 -top-1.5 flex h-full w-full select-none text-[11px] font-normal leading-tight text-blue-gray-400 transition-all before:pointer-events-none before:mt-[6.5px] before:mr-1 before:box-border before:block before:h-1.5 before:w-2.5 before:rounded-tl-md before:border-t before:border-l before:border-blue-gray-200 before:transition-all after:pointer-events-none after:mt-[6.5px] after:ml-1 after:box-border after:block after:h-1.5 after:w-2.5 after:flex-grow after:rounded-tr-md after:border-t after:border-r after:border-blue-gray-200 after:transition-all peer-placeholder-shown:text-sm peer-placeholder-shown:leading-[3.75] peer-placeholder-shown:text-blue-gray-500 peer-placeholder-shown:before:border-transparent peer-placeholder-shown:after:border-transparent peer-focus:text-[11px] peer-focus:leading-tight peer-focus:text-pink-500 peer-focus:before:border-t-2 peer-focus:before:border-l-2 peer-focus:before:border-pink-500 peer-focus:after:border-t-2 peer-focus:after:border-r-2 peer-focus:after:border-pink-500 peer-disabled:text-transparent peer-disabled:before:border-transparent peer-disabled:after:border-transparent peer-disabled:peer-placeholder-shown:text-blue-gray-500"
+            className="mb-4 relative block overflow-hidden rounded-md border border-gray-200 px-3 pt-3 shadow-sm focus-within:border-blue-600 focus-within:ring-1 focus-within:ring-blue-600 dark:border-gray-700 dark:bg-gray-800"
           >
-            {label}
+            <input
+              id={name}
+              name={name}
+              type={type}
+              value={value}
+              onChange={onChange}
+              placeholder={placeholder}
+              disabled={disabled}
+              ref={ref as Ref<HTMLInputElement>}
+              className="peer h-8 w-full border-none bg-transparent p-0 placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 dark:text-white sm:text-sm"
+            />
+            <span className="absolute start-3 top-3 -translate-y-1/2 text-xs text-gray-700 transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:top-3 peer-focus:text-xs dark:text-gray-200">
+              {label}
+            </span>
           </label>
-          {errors && errors[name] && (
-            <small className="required">{errors[name].message}</small>
-          )}
-        </div>
-      </div>
+        )}
+        {errors && errors[name] && (
+          <small className="text-red-500 text-sm">{errors[name].message}</small>
+        )}
+      </>
     )
   },
 )
-
+Input.displayName = 'Input'
 export default Input

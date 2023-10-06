@@ -40,9 +40,14 @@ const Book = () => {
         }
         fetchData();
     }, []);
+    const debouncedSearch = debounce((searchTerm) => {
+        const filtered = dataBooks.filter(book => book.name.toLowerCase().includes(searchTerm.trim().toLowerCase()));
+        console.log(searchTerm)
+        setDatFilter(filtered);
+    }, 300);
     useEffect(() => {
         debouncedSearch(valueSearch);
-    }, [valueSearch]);
+    }, [debouncedSearch, valueSearch]);
     const handleInputFocus = () => {
         setInputFocused(true);
     };
@@ -50,11 +55,7 @@ const Book = () => {
     const handleInputBlur = () => {
         setInputFocused(false);
     };
-    const debouncedSearch = debounce((searchTerm) => {
-        const filtered = dataBooks.filter(book => book.name.toLowerCase().includes(searchTerm.trim().toLowerCase()));
-        console.log(searchTerm)
-        setDatFilter(filtered);
-   }, 300);
+
     const onChangeSearch = (e) =>{
         debouncedSearch(e);
         setValueSearch(e)

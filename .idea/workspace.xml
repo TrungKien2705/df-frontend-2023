@@ -5,28 +5,51 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="28bfe9d8-f5f5-4530-8f5e-0f2ff57fff60" name="Changes" comment="git assignment-2">
-      <change afterPath="$PROJECT_DIR$/assignment-4/src/app/robots.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment-4/src/app/sitemap.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment-4/src/components/Button.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment-4/src/components/Input.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment-4/src/components/Table.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment-4/src/components/layout/Footer.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment-4/src/components/layout/Header.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment-4/src/app/404/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment-4/src/app/book/[id]/layout.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment-4/src/app/book/[id]/loading.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment-4/src/app/book/[id]/not-found.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment-4/src/app/book/[id]/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment-4/src/app/book/layout.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment-4/src/app/not-found.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment-4/src/axios.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment-4/src/components/Loading.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment-4/src/components/NoData.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment-4/src/components/NotFound.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment-4/src/components/Pagination.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment-4/src/components/Popover.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment-4/src/components/modal/ModalDelete.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment-4/src/components/modal/ModalForm.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment-4/src/components/skeleton/SkeletonTable.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment-4/src/hook/useTheme.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment-4/src/image/empty.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment-4/src/image/user.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment-4/src/services/bookServices.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment-4/src/services/topicServices.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment-4/src/types/books.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment-4/src/types/theme.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment-4/src/types/topic.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment-2/src/App.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment-2/src/components/Pagination.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assignment-2/src/components/Pagination.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment-2/src/components/ToggleButton.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assignment-2/src/components/ToggleButton.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment-2/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment-2/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment-2/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment-2/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/assignment-2/src/views/Book.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assignment-2/src/views/Book.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment-3/src/components/Pagination.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/assignment-3/src/components/Pagination.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment-3/src/components/ToggleButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/assignment-3/src/components/ToggleButton.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment-3/src/hook/useTheme.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/assignment-3/src/hook/useTheme.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment-3/src/views/Book.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/assignment-3/src/views/Book.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment-3/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment-3/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/assignment-3/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment-4/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/assignment-4/next.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assignment-4/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/assignment-4/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assignment-4/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/assignment-4/pnpm-lock.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment-4/src/app/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/assignment-4/src/app/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment-4/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/assignment-4/src/styles/globals.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assignment-4/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/assignment-4/src/app/layout.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assignment-4/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/assignment-4/src/app/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment-4/src/app/robots.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment-4/src/app/sitemap.ts" beforeDir="false" afterPath="$PROJECT_DIR$/assignment-4/src/app/sitemap.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment-4/src/components/Button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/assignment-4/src/components/Button.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment-4/src/components/Input.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/assignment-4/src/components/Input.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment-4/src/components/Table.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/assignment-4/src/components/Table.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment-4/src/components/layout/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/assignment-4/src/components/layout/Footer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment-4/src/components/layout/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/assignment-4/src/components/layout/Header.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assignment-4/tailwind.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/assignment-4/tailwind.config.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,13 +62,13 @@
       <list>
         <option value="JavaScript File" />
         <option value="CSS File" />
-        <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/assignment-2" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="SYNC" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -86,7 +109,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Traning-Frontend-2023/df-frontend-2023/assignment-4/src/app&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Traning-Frontend-2023/df-frontend-2023/assignment-4/src/components&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
@@ -103,21 +126,21 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Traning-Frontend-2023\df-frontend-2023\assignment-4\src\components" />
       <recent name="D:\Traning-Frontend-2023\df-frontend-2023\assignment-4\src\app" />
-      <recent name="D:\Traning-Frontend-2023\df-frontend-2023\assignment-4\src" />
-      <recent name="D:\Traning-Frontend-2023\df-frontend-2023\assignment-3\src" />
-      <recent name="D:\Traning-Frontend-2023\df-frontend-2023\assignment-3\src\styles" />
-      <recent name="D:\Traning-Frontend-2023\df-frontend-2023\assignment-3\public" />
+      <recent name="D:\Traning-Frontend-2023\df-frontend-2023\assignment-4\src\app\book" />
+      <recent name="D:\Traning-Frontend-2023\df-frontend-2023\assignment-4\src\app\hook" />
+      <recent name="D:\Traning-Frontend-2023\df-frontend-2023\assignment-4\src\types" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Traning-Frontend-2023\df-frontend-2023\assignment-4\src\styles" />
-      <recent name="D:\Traning-Frontend-2023\df-frontend-2023\assignment-2\src\components\layout" />
-      <recent name="D:\Traning-Frontend-2023\df-frontend-2023\assignment-2\src" />
-      <recent name="D:\Traning-Frontend-2023\df-frontend-2023\assignment-2\src\styles" />
-      <recent name="D:\Traning-Frontend-2023\df-frontend-2023\assignment-2\src\views" />
+      <recent name="D:\Traning-Frontend-2023\df-frontend-2023\assignment-4\src\app" />
+      <recent name="D:\Traning-Frontend-2023\df-frontend-2023\assignment-4\src\app\book\[id]" />
+      <recent name="D:\Traning-Frontend-2023\df-frontend-2023\assignment-4\src\components" />
+      <recent name="D:\Traning-Frontend-2023\df-frontend-2023\assignment-4\src\app\book" />
+      <recent name="D:\Traning-Frontend-2023\df-frontend-2023\assignment-4\src" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.start (1)">
+  <component name="RunManager" selected="npm.dev">
     <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/assignment-4/package.json" />
       <command value="run" />
@@ -150,8 +173,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.start (1)" />
         <item itemvalue="npm.dev" />
+        <item itemvalue="npm.start (1)" />
         <item itemvalue="npm.start" />
       </list>
     </recent_temporary>
@@ -187,7 +210,14 @@
       <workItem from="1696045260114" duration="5443000" />
       <workItem from="1696136941896" duration="1547000" />
       <workItem from="1696233455387" duration="2920000" />
-      <workItem from="1696297432326" duration="10108000" />
+      <workItem from="1696297432326" duration="11608000" />
+      <workItem from="1696343059085" duration="5769000" />
+      <workItem from="1696389890410" duration="10373000" />
+      <workItem from="1696429815761" duration="8463000" />
+      <workItem from="1696468964494" duration="25417000" />
+      <workItem from="1696500497885" duration="2245000" />
+      <workItem from="1696517085401" duration="8572000" />
+      <workItem from="1696555126415" duration="28000000" />
     </task>
     <task id="LOCAL-00001" summary="git assignment-2">
       <option name="closed" value="true" />
